@@ -9,11 +9,24 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* foodOrderAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* foodOrderAppTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-foodOrderApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-foodOrderApp.a */; };
+		0EA517F6449A42249E754EE7 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7AB42D8903D4026B2C770D3 /* Manrope-Bold.ttf */; };
+		100D125406E44BF49DC340DE /* Sora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22A283989B5644FDBDA3430C /* Sora-Medium.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		32230644E99141A698FBE553 /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CC7BB7D7BE40AAA60AC8EA /* Outfit-Bold.ttf */; };
+		515C75490A9042379DF9E118 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789C2C7D9FCC4DD4B697C58D /* Sora-Regular.ttf */; };
+		54DC9D261AA846C7AB16D053 /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56A82BD814924CCF9154C0AA /* Outfit-Regular.ttf */; };
+		68241A1F2DFA464BA549C9FB /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D68BFFD69F4409591A11E71 /* Manrope-SemiBold.ttf */; };
+		6D742D9F1BEF4076994532A9 /* Jose.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F76C0DDE5B5D491DBBACBA2A /* Jose.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-foodOrderApp-foodOrderAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-foodOrderApp-foodOrderAppTests.a */; };
+		7FAD0E625D8049429270AFF5 /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6FF411A6A6A4D98B74C282B /* Outfit-Medium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B3E01F9EC9EF414E80097B90 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0458B056AC24B04BDBA6EAE /* LibreBaskerville-Regular.ttf */; };
+		B4760EF24FFA4F5AA7ED07F9 /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3576D62F824748C68FEC1E68 /* Sora-Bold.ttf */; };
+		B64B7A5FCECC4293B208FCF3 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB9C1D35080477DA7BDE963 /* Manrope-Regular.ttf */; };
+		B98BDEC97D7B46CEA46C3E1D /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A50EAA5FCCA46B3A77D3164 /* Outfit-Light.ttf */; };
+		ECC44D9A5D794E2C9552998B /* Sofia Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07733D3F172E4E54AF2C4A4B /* Sofia Pro.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +43,8 @@
 		00E356EE1AD99517003FC87E /* foodOrderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodOrderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* foodOrderAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodOrderAppTests.m; sourceTree = "<group>"; };
+		07733D3F172E4E54AF2C4A4B /* Sofia Pro.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sofia Pro.otf"; path = "../assets/fonts/Sofia Pro.otf"; sourceTree = "<group>"; };
+		11CC7BB7D7BE40AAA60AC8EA /* Outfit-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Bold.ttf"; path = "../assets/fonts/Outfit-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* foodOrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodOrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = foodOrderApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = foodOrderApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -37,13 +52,24 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = foodOrderApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = foodOrderApp/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-foodOrderApp-foodOrderAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodOrderApp-foodOrderAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A283989B5644FDBDA3430C /* Sora-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Medium.ttf"; path = "../assets/fonts/Sora-Medium.ttf"; sourceTree = "<group>"; };
+		3576D62F824748C68FEC1E68 /* Sora-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Bold.ttf"; path = "../assets/fonts/Sora-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-foodOrderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodOrderApp.debug.xcconfig"; path = "Target Support Files/Pods-foodOrderApp/Pods-foodOrderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		56A82BD814924CCF9154C0AA /* Outfit-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Regular.ttf"; path = "../assets/fonts/Outfit-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-foodOrderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodOrderApp.release.xcconfig"; path = "Target Support Files/Pods-foodOrderApp/Pods-foodOrderApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-foodOrderApp-foodOrderAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodOrderApp-foodOrderAppTests.debug.xcconfig"; path = "Target Support Files/Pods-foodOrderApp-foodOrderAppTests/Pods-foodOrderApp-foodOrderAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-foodOrderApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-foodOrderApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		789C2C7D9FCC4DD4B697C58D /* Sora-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Regular.ttf"; path = "../assets/fonts/Sora-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = foodOrderApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-foodOrderApp-foodOrderAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodOrderApp-foodOrderAppTests.release.xcconfig"; path = "Target Support Files/Pods-foodOrderApp-foodOrderAppTests/Pods-foodOrderApp-foodOrderAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D68BFFD69F4409591A11E71 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-SemiBold.ttf"; path = "../assets/fonts/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		9A50EAA5FCCA46B3A77D3164 /* Outfit-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Light.ttf"; path = "../assets/fonts/Outfit-Light.ttf"; sourceTree = "<group>"; };
+		A0458B056AC24B04BDBA6EAE /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Regular.ttf"; path = "../assets/fonts/LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
+		ACB9C1D35080477DA7BDE963 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Regular.ttf"; path = "../assets/fonts/Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		C6FF411A6A6A4D98B74C282B /* Outfit-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Medium.ttf"; path = "../assets/fonts/Outfit-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F76C0DDE5B5D491DBBACBA2A /* Jose.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Jose.ttf; path = ../assets/fonts/Jose.ttf; sourceTree = "<group>"; };
+		F7AB42D8903D4026B2C770D3 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Bold.ttf"; path = "../assets/fonts/Manrope-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C4E02BC6E3E04FB28D6BEC01 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +173,27 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-foodOrderApp-foodOrderAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4E02BC6E3E04FB28D6BEC01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07733D3F172E4E54AF2C4A4B /* Sofia Pro.otf */,
+				F76C0DDE5B5D491DBBACBA2A /* Jose.ttf */,
+				A0458B056AC24B04BDBA6EAE /* LibreBaskerville-Regular.ttf */,
+				F7AB42D8903D4026B2C770D3 /* Manrope-Bold.ttf */,
+				ACB9C1D35080477DA7BDE963 /* Manrope-Regular.ttf */,
+				8D68BFFD69F4409591A11E71 /* Manrope-SemiBold.ttf */,
+				11CC7BB7D7BE40AAA60AC8EA /* Outfit-Bold.ttf */,
+				9A50EAA5FCCA46B3A77D3164 /* Outfit-Light.ttf */,
+				C6FF411A6A6A4D98B74C282B /* Outfit-Medium.ttf */,
+				56A82BD814924CCF9154C0AA /* Outfit-Regular.ttf */,
+				3576D62F824748C68FEC1E68 /* Sora-Bold.ttf */,
+				22A283989B5644FDBDA3430C /* Sora-Medium.ttf */,
+				789C2C7D9FCC4DD4B697C58D /* Sora-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +291,19 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				ECC44D9A5D794E2C9552998B /* Sofia Pro.otf in Resources */,
+				6D742D9F1BEF4076994532A9 /* Jose.ttf in Resources */,
+				B3E01F9EC9EF414E80097B90 /* LibreBaskerville-Regular.ttf in Resources */,
+				0EA517F6449A42249E754EE7 /* Manrope-Bold.ttf in Resources */,
+				B64B7A5FCECC4293B208FCF3 /* Manrope-Regular.ttf in Resources */,
+				68241A1F2DFA464BA549C9FB /* Manrope-SemiBold.ttf in Resources */,
+				32230644E99141A698FBE553 /* Outfit-Bold.ttf in Resources */,
+				B98BDEC97D7B46CEA46C3E1D /* Outfit-Light.ttf in Resources */,
+				7FAD0E625D8049429270AFF5 /* Outfit-Medium.ttf in Resources */,
+				54DC9D261AA846C7AB16D053 /* Outfit-Regular.ttf in Resources */,
+				B4760EF24FFA4F5AA7ED07F9 /* Sora-Bold.ttf in Resources */,
+				100D125406E44BF49DC340DE /* Sora-Medium.ttf in Resources */,
+				515C75490A9042379DF9E118 /* Sora-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +605,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -572,6 +633,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -579,7 +641,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -616,7 +684,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -636,6 +704,7 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
@@ -643,7 +712,13 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
