@@ -17,8 +17,8 @@ export const Color = {
     BACKGROUND: '#fff',
     PRIMARY: '#040B1B',
     SECONDARY: '#040B1B',
-    TAB_BAR_BACKGROUND: '#fdfdff',
-    VIEW_OVERLAY: '#ebf2fa',
+    TAB_BAR_BACKGROUND: '#f2fdff',
+    VIEW_OVERLAY: '#f2fdff',
   },
   darkTheme: {
     BACKGROUND: '#040B1B',

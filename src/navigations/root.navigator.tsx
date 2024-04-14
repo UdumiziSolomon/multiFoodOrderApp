@@ -70,7 +70,7 @@ const CustomTabBar: FC<BottomTabBarProps> = ({
         justifyContent: 'space-evenly',
         backgroundColor: ThemeColor.TAB_BAR_BACKGROUND,
         borderRadius: ms(100),
-        width: width - ms(5),
+        width: width - ms(20),
         alignSelf: 'center',
         marginTop: ms(10),
         height: ms(65),
