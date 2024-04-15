@@ -2,27 +2,30 @@ import React, { FC } from 'react';
 import { ParamListBase } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomTabBarProps } from 'types/custom-bottom-tab';
-import { Dimensions, Pressable, View } from 'react-native';
+import { Dimensions, Pressable, Text, View } from 'react-native';
 import { ms } from 'react-native-size-matters';
 import { Favourites, Home, Orders, Profile, Search } from 'pages/index';
 import { useThemeColor } from 'hooks/useThemeColor';
 
-import { Fonts } from 'ui/components/typography/typography';
 // icons
 import HomeIcon from 'svgs/tab/home.svg';
-import HomeCIcon from 'svgs/tab/home-c.svg';
 
 import SearchIcon from 'svgs/tab/search.svg';
-import SearchCIcon from 'svgs/tab/search-c.svg';
 
 import OrdersIcon from 'svgs/tab/orders.svg';
-import OrdersCIcon from 'svgs/tab/orders-c.svg';
 
 import FavouritesIcon from 'svgs/tab/favourites.svg';
-import FavouritesCIcon from 'svgs/tab/favourites-c.svg';
 
 import ProfileIcon from 'svgs/tab/profile.svg';
-import ProfileCIcon from 'svgs/tab/profile-c.svg';
+import Animated, {
+  BounceInDown,
+  BounceInLeft,
+  BounceInUp,
+  BounceOutDown,
+  useAnimatedStyle,
+  withSpring,
+  withTiming,
+} from 'react-native-reanimated';
 
 const Tab = createBottomTabNavigator<ParamListBase>();
 const { width } = Dimensions.get('window');
@@ -41,24 +44,24 @@ const CustomTabBar: FC<BottomTabBarProps> = ({
     };
   } = {
     Home: {
-      isFocused: <HomeCIcon width={ms(27)} height={ms(27)} />,
-      unMounted: <HomeIcon width={ms(25)} height={ms(25)} />,
+      isFocused: <HomeIcon width={ms(29)} height={ms(29)} />,
+      unMounted: <HomeIcon width={ms(29)} height={ms(29)} />,
     },
     Search: {
-      isFocused: <SearchCIcon width={ms(27)} height={ms(27)} />,
-      unMounted: <SearchIcon width={ms(25)} height={ms(25)} />,
+      isFocused: <SearchIcon width={ms(28)} height={ms(28)} />,
+      unMounted: <SearchIcon width={ms(28)} height={ms(28)} />,
     },
     Orders: {
-      isFocused: <OrdersCIcon width={ms(27)} height={ms(27)} />,
-      unMounted: <OrdersIcon width={ms(25)} height={ms(25)} />,
+      isFocused: <OrdersIcon width={ms(27)} height={ms(27)} />,
+      unMounted: <OrdersIcon width={ms(27)} height={ms(27)} />,
     },
     Favourites: {
-      isFocused: <FavouritesCIcon width={ms(27)} height={ms(27)} />,
-      unMounted: <FavouritesIcon width={ms(25)} height={ms(25)} />,
+      isFocused: <FavouritesIcon width={ms(28)} height={ms(28)} />,
+      unMounted: <FavouritesIcon width={ms(28)} height={ms(28)} />,
     },
     Profile: {
-      isFocused: <ProfileCIcon width={ms(27)} height={ms(27)} />,
-      unMounted: <ProfileIcon width={ms(25)} height={ms(25)} />,
+      isFocused: <ProfileIcon width={ms(26)} height={ms(26)} />,
+      unMounted: <ProfileIcon width={ms(26)} height={ms(26)} />,
     },
   };
 
@@ -73,7 +76,7 @@ const CustomTabBar: FC<BottomTabBarProps> = ({
         width: width - ms(20),
         alignSelf: 'center',
         marginTop: ms(10),
-        height: ms(65),
+        height: ms(60),
       }}>
       {state.routes.map((route, index: number) => {
         const { options } = descriptors[route.key];
@@ -98,6 +101,14 @@ const CustomTabBar: FC<BottomTabBarProps> = ({
           }
         };
 
+        const animatedStyle = useAnimatedStyle(() => ({
+          transform: [
+            {
+              scale: isFocused ? withSpring(1.1, { duration: 100 }) : 1,
+            },
+          ],
+        }));
+
         return (
           <Pressable
             accessibilityRole="button"
@@ -106,11 +117,20 @@ const CustomTabBar: FC<BottomTabBarProps> = ({
             testID={options.tabBarTestID}
             onPress={onPress}
             style={{}}>
-            <View style={{ alignItems: 'center', height: ms(30) }}>
+            <Animated.View
+              entering={BounceInDown.delay(200)}
+              style={[{
+                alignItems: 'center',
+                height: ms(35),
+                paddingHorizontal: ms(5),
+                borderBottomWidth: isFocused ? ms(1) : 0,
+                borderBottomColor: ThemeColor.PRIMARY,
+                borderRadius: ms(100),
+              }, animatedStyle]}>
               {isFocused
                 ? imagesObj[route.name]?.isFocused
                 : imagesObj[route.name]?.unMounted}
-            </View>
+            </Animated.View>
           </Pressable>
         );
       })}

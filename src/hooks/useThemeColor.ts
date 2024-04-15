@@ -8,15 +8,18 @@ const { darkTheme, lightTheme } = Color;
 type TThemeColorStore = {
   theme: typeof lightTheme | typeof darkTheme;
   updateTheme: () => void;
+  themeBool: boolean
 };
 
 export const useThemeColor = create<TThemeColorStore>()(
   persist(
     set => ({
       theme: darkTheme,
+      themeBool: false,
       updateTheme: () => {
         set(prevState => ({
           theme: prevState.theme === lightTheme ? darkTheme : lightTheme,
+          themeBool: prevState.theme === lightTheme ? true : false,
         }));
       },
     }),

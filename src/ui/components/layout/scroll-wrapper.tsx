@@ -1,7 +1,7 @@
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useThemeColor } from 'hooks/useThemeColor';
 import React, { ReactNode } from 'react';
-import { View, ViewStyle } from 'react-native';
+import { ScrollView, View, ViewStyle } from 'react-native';
 
 interface IScrollProps extends React.ComponentProps<typeof View> {
   style?: ViewStyle;
@@ -12,7 +12,9 @@ interface IScrollProps extends React.ComponentProps<typeof View> {
 export const ScrollWrapper = ({ style, children, type }: IScrollProps) => {
   const ThemeColor = useThemeColor(st => st.theme);
   return (
-    <View style={[style, { backgroundColor: ThemeColor.BACKGROUND, flex: 1 }]}>
+    <ScrollView
+      contentContainerStyle={{ flexGrow: 1 }}
+      style={[style, { backgroundColor: ThemeColor.BACKGROUND, flex: 1 }]}>
       {type === 'scroll' ? (
         <KeyboardAwareScrollView
           horizontal={true}
@@ -24,6 +26,6 @@ export const ScrollWrapper = ({ style, children, type }: IScrollProps) => {
       ) : (
         <View style={style}>{children}</View>
       )}
-    </View>
+    </ScrollView>
   );
 };
