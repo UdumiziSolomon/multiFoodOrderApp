@@ -1,3 +1,3 @@
-export { default as HomeHeader } from './home-header';
-export { default as TopRating } from './top-rating';
-export { default as Restaurants } from './restaurants';
+export { default as HomeHeader } from './components/home-header';
+export { default as TopRating } from './components/top-rating';
+export { default as Restaurants } from './components/restaurants';

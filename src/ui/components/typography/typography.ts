@@ -18,8 +18,9 @@ export const Color = {
     PRIMARY: '#040B1B',
     SECONDARY: '#040B1B',
     TAB_BAR_BACKGROUND: '#e9ecef',
-    VIEW_OVERLAY: '#f2fdff',
+    VIEW_OVERLAY: '#e9ecef',
     OPP_DISPLAY: '#0D1328',
+    CARD_BORDER: '#e9ecef',
   },
   darkTheme: {
     BACKGROUND: '#040B1B',
@@ -28,5 +29,6 @@ export const Color = {
     TAB_BAR_BACKGROUND: '#0D1328',
     VIEW_OVERLAY: '#0D1328',
     OPP_DISPLAY: '#f2fdff',
+    CARD_BORDER: '#495057',
   },
 };

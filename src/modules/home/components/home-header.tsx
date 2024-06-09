@@ -55,14 +55,6 @@ const HomeHeader = () => {
           </Animated.View>
         </View>
       </View>
-
-      {/* <Animated.View
-        entering={FadeInUp.delay(500)}
-        style={[styles.loc, { backgroundColor: ThemeColor.VIEW_OVERLAY }]}>
-        <Text style={[styles.headerDesc, { color: ThemeColor.SECONDARY }]}>
-          🌍 Akure, Ondo State
-        </Text>
-      </Animated.View> */}
     </View>
   );
 };
@@ -81,7 +73,7 @@ const styles = ScaledSheet.create({
   },
   headerName: {
     fontFamily: Fonts.CBold,
-    fontSize: ms(22),
+    fontSize: ms(21),
     width: '60%',
   },
   headerDesc: {
@@ -92,13 +84,5 @@ const styles = ScaledSheet.create({
   notifyLayer: {
     padding: ms(8),
     borderRadius: ms(50),
-  },
-  loc: {
-    width: 'auto',
-    alignSelf: 'flex-start',
-    paddingVertical: ms(3),
-    paddingHorizontal: ms(15),
-    borderRadius: ms(50),
-    marginHorizontal: ms(20),
   },
 });

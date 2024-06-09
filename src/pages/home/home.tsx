@@ -13,6 +13,7 @@ import Animated, { BounceInUp, FlipInEasyX } from 'react-native-reanimated';
 const { width } = Dimensions.get('screen');
 
 import Notifications from 'svgs/tab/notifications.svg';
+import DinersAround from 'modules/home/components/diners-around';
 
 const Home = () => {
   const ThemeColor = useThemeColor(st => st.theme);
@@ -34,7 +35,7 @@ const Home = () => {
           <Notifications width={ms(70)} height={ms(70)} />
         </Animated.View>
       </View>
-      {networkStat && ( // fix to !
+      {!networkStat && (
         <Animated.View
           entering={BounceInUp}
           style={[
@@ -55,9 +56,10 @@ const Home = () => {
           </Text>
         </Animated.View>
       )}
-      <ScrollWrapper style={{ paddingHorizontal: ms(10), marginTop: ms(5) }}>
-        {/* <Restaurants /> */}
-        {/* <TopRating /> */}
+      <ScrollWrapper style={{ marginTop: ms(5) }}>
+        <TopRating />
+        <Restaurants />
+        <DinersAround />
       </ScrollWrapper>
     </ScreenWrapper>
   );
@@ -71,7 +73,7 @@ const styles = ScaledSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: ms(10),
-    marginTop: ms(5),
+    marginTop: ms(4),
   },
   news: {
     width: width - ms(30),
@@ -79,19 +81,18 @@ const styles = ScaledSheet.create({
     paddingVertical: ms(10),
     paddingHorizontal: ms(20),
     borderRadius: ms(20),
-    marginTop: ms(10),
+    marginTop: ms(20),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   newsText: {
     fontFamily: Fonts.CBold,
-    fontSize: ms(17),
+    fontSize: ms(14),
   },
   newsSubText: {
     fontFamily: Fonts.Regular,
-    fontSize: ms(13),
-    marginTop: ms(3),
-    lineHeight: ms(15),
+    fontSize: ms(12),
+    textAlign: 'center',
   },
 });

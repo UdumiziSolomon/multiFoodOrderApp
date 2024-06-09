@@ -2,29 +2,22 @@ import React, { FC } from 'react';
 import { ParamListBase } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomTabBarProps } from 'types/custom-bottom-tab';
-import { Dimensions, Pressable, Text, View } from 'react-native';
+import { Dimensions, Pressable, View } from 'react-native';
 import { ms } from 'react-native-size-matters';
 import { Favourites, Home, Orders, Profile, Search } from 'pages/index';
 import { useThemeColor } from 'hooks/useThemeColor';
 
 // icons
 import HomeIcon from 'svgs/tab/home.svg';
-
 import SearchIcon from 'svgs/tab/search.svg';
-
 import OrdersIcon from 'svgs/tab/orders.svg';
-
 import FavouritesIcon from 'svgs/tab/favourites.svg';
 
 import ProfileIcon from 'svgs/tab/profile.svg';
 import Animated, {
   BounceInDown,
-  BounceInLeft,
-  BounceInUp,
-  BounceOutDown,
   useAnimatedStyle,
   withSpring,
-  withTiming,
 } from 'react-native-reanimated';
 
 const Tab = createBottomTabNavigator<ParamListBase>();
@@ -56,8 +49,8 @@ const CustomTabBar: FC<BottomTabBarProps> = ({
       unMounted: <OrdersIcon width={ms(27)} height={ms(27)} />,
     },
     Favourites: {
-      isFocused: <FavouritesIcon width={ms(28)} height={ms(28)} />,
-      unMounted: <FavouritesIcon width={ms(28)} height={ms(28)} />,
+      isFocused: <FavouritesIcon width={ms(27)} height={ms(27)} />,
+      unMounted: <FavouritesIcon width={ms(27)} height={ms(27)} />,
     },
     Profile: {
       isFocused: <ProfileIcon width={ms(26)} height={ms(26)} />,
