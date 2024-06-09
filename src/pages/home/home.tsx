@@ -58,8 +58,8 @@ const Home = () => {
       )}
       <ScrollWrapper style={{ marginTop: ms(5) }}>
         <TopRating />
-        <Restaurants />
         <DinersAround />
+        <Restaurants />
       </ScrollWrapper>
     </ScreenWrapper>
   );

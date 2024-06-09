@@ -24,22 +24,23 @@ const DinersAround = () => {
           paddingVertical: ms(10),
         }}>
         <View>
-          <Text
+          {/* <Text
             style={{
               color: ThemeColor.SECONDARY,
               fontFamily: Fonts.CBold,
               fontSize: ms(15),
             }}>
-            Diners Around you
-          </Text>
+            Explore Nearby Diners
+          </Text> */}
           <Text
             style={{
               color: ThemeColor.PRIMARY,
-              fontFamily: Fonts.CRegular,
-              fontSize: ms(10.5),
+              fontFamily: Fonts.ARegular,
+              fontSize: ms(12),
               marginTop: ms(2),
+              width: width / 1.8
             }}>
-            Explore diners around your area
+            Find the perfect spot to satisfy your hunger and enjoy delicious food nearby
           </Text>
         </View>
         <Pressable
@@ -66,7 +67,7 @@ const styles = ScaledSheet.create({
     width: width - ms(30),
     alignSelf: 'center',
     paddingVertical: ms(10),
-    paddingHorizontal: ms(20),
+    paddingHorizontal: ms(15),
     borderRadius: ms(20),
     marginTop: ms(20),
     flexDirection: 'row',
